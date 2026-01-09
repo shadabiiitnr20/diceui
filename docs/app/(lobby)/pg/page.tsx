@@ -1,21 +1,17 @@
 import { Demo } from "@/components/demo";
 import { Shell } from "@/components/shell";
+import { Button } from "@/components/ui/button";
 import ColorPickerDemo from "@/registry/default/examples/color-picker-demo";
-import SpeedDialControlledDemo from "@/registry/default/examples/speed-dial-controlled-demo";
-import SpeedDialDemo from "@/registry/default/examples/speed-dial-demo";
-import SpeedDialHoverDemo from "@/registry/default/examples/speed-dial-hover-demo";
-import SpeedDialLabelsDemo from "@/registry/default/examples/speed-dial-labels-demo";
-import SpeedDialSideDemo from "@/registry/default/examples/speed-dial-side-demo";
+import SelectionToolbarDemo from "@/registry/default/examples/selection-toolbar-demo";
+import SelectionToolbarInfoDemo from "@/registry/default/examples/selection-toolbar-info-demo";
 
 export default function PlaygroundPage() {
   return (
     <Shell>
       <Demo>
-        <SpeedDialDemo />
-        <SpeedDialLabelsDemo />
-        <SpeedDialControlledDemo />
-        <SpeedDialSideDemo />
-        <SpeedDialHoverDemo />
+        <SelectionToolbarDemo />
+        <Button>Do a kickflip</Button>
+        <SelectionToolbarInfoDemo />
         <ColorPickerDemo />
       </Demo>
     </Shell>
